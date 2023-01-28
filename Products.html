@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!----BOOTSTRAP CSS Lib-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- W3.css Lib -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!--Custom Css Files-->
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <link rel="stylesheet" href="./Products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Bubbersons</title>
+  </head>
+
+  <a  href="/index.html" ><img class="w3-margin" style="max-width: 5vw;"  src="./logo.png"/></a>
+
+
+  <div style="animation: none;opacity: 1;" class='Title'>
+    <h1 style="font-family: Delicious;">BUBBERSONS</h1>
+    <h6>Pharmaceutical Distributors</h6>
+  </div>
+  <style>
+    @font-face { font-family: Delicious; src: url('/Fonts/prototype/Prototype.ttf '); } 
+  </style>
+  <script>
+    jQuery(document).ready(function($) {
+        var elemStr;
+        if (window.matchMedia("(min-width: 608px)").matches) 
+            elemStr = '#content > div';
+        else
+            elemStr  = '#content > div > div'
+   
+            
+  var $copy = $("div > h1");
+	var prevText = $copy.text()
+  var newText = "";
+  for( const i of prevText)
+    newText += ("<span>"+i+"</span>")
+                   
+  $copy.html(newText)
+  
+  $arr = $(elemStr)
+  
+  $arr.css('opacity',0);
+   re($arr,0);
+
+    function re($arr,i) {
+        
+      if(i == $arr.length)return;
+  
+      setTimeout(function(){
+        $arr.eq(i).fadeTo(1000,1);
+        re($arr,i+1);
+        }, 500);
+    }
+});
+    
+  </script>  
+  <body class="w3-center container"> 
+    <h1>Our line of Products</h1>       
+    <!------------------Company Products--------------------->
+        <div id="content" class="w3-row-padding w3-cell-row container" style="columns: 3;">
+            <div>
+            <div class=" w3-card w3-container w3-col w3-margin m3 l2 " >
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image " src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong >Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+        </div>
+        <div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image " src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+        </div>
+        <div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image " src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image " src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+        </div>
+        <div>
+            <div class="w3-card w3-container w3-col w3-margin m3 l2">
+                <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
+                <h3><strong>Random Medicine 3 mg</strong></h3>
+                <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
+            </div>
+        </div>
+        </div>
+        
+  </body>
+</html>

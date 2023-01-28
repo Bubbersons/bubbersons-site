@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!----BOOTSTRAP CSS Lib-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- W3.css Lib -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+    <!--Custom Css Files-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Bubbersons</title>
+  </head>
+  <body>
+    <!--------------Title Bar---------->
+          
+    <div class="LogoHeader">
+      <img src='images/left-part.png' class="Img-logo ImgLeft" alt="logo" /><img src='images/top-part.png' class="Img-logo ImgTop" alt="logo" />
+      <br/>
+      <img src='images/bottom-part.png' class="Img-logo ImgBottom" alt="logo" /><img src='images/right-part.png' class="Img-logo ImgRight" alt="logo" />
+    </div>
+    <div class='Title'>
+      <h1 style="font-family: Delicious;">BUBBERSONS</h1>
+      <h6 style="animation: flipX 4.6s forwards;">Pharmaceutical Distributors</h6>
+    </div>
+    <script>
+      jQuery(document).ready(function($) {slideShow(1);});
+      
+      function slideShow(i){
+       i = i%4;
+       const arr = ["https://images.unsplash.com/photo-1577774438656-768f1e5d9ed6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyb3VzZWx8ZW58MHx8MHx8&w=1000&q=80",
+       "https://blog.equinix.com/wp-content/uploads/2017/07/pharma-medical.jpg",
+       "https://www.drugdiscoverytrends.com/wp-content/uploads/2022/03/Pharma50-2022_RDspenders_770x500_Vs1.jpg",
+       "http://www.biospace.com/getasset/07b7cf93-9513-432d-b6d8-cd2b08950623/"
+     ];
+     
+
+     setInterval(function(){document.getElementById('mySlides').src = arr[i];slideShow(i+1);},5000);  
+      }
+     </script>
+
+    <!------------- Images SlideShow ------------->
+    <div id="mySlides" class="carousel w3-center" style="border-color: rgba(255, 248, 146, 0.869); border-style:groove; border-width: 1vw; margin-left: 10%;margin-right: 10%;" >        
+      <img style="width: 100%;max-height: 50vh;box-shadow: 2px -2px 20px black;"  src="https://images.unsplash.com/photo-1577774438656-768f1e5d9ed6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyb3VzZWx8ZW58MHx8MHx8&w=1000&q=80">      
+    </div>
+
+    <!------------------Company Products--------------------->
+    <div id="Main" class = "container ">
+      <div class="center-block">
+      <h4  style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-style: oblique;">We are the experts of Pharmaceuticals with over 40 years of experience in Sales, and 25+years of experience in manufacturing. We have units set-up pan India and have tie-up's with various manufacturer's span-across.
+      Together racing towards making the latest and safest medicines available to mankind.</h5>
+      </div>
+
+      <div class="w3-row w3-row-padding w3-center ">
+
+        <div class="w3-card w3-col w3-margin m3 l3  " >
+          <!-- <img class="img-responsive" src="https://www.shutterstock.com/image-photo/medicine-tablet-capsule-counting-machine-260nw-1615726474.jpg"/> -->
+        <h1>Services</h1>
+        </div>
+        <div class=" w3-card w3-col w3-margin m3 l3  " >
+          <a href="Products.html">
+            <h1>Products</h1>
+          <!-- <img class="img-responsive" src="https://thumbs.dreamstime.com/z/medicine-capsules-packing-machine-medicine-capsules-packing-machine-process-packaging-production-manufacturing-pharmaceutical-148845577.jpg"/> -->
+        <!-- <caption>Products</caption> -->
+      </a>
+        </div>
+        <div class="w3-card  w3-col w3-margin m3 l3  w3-greyscale-min" >
+          <!-- <img class=" img-responsive" src="https://www.plm.automation.siemens.com/media/global/en/product-quality-compliance-hero-1280x720_tcm27-9677.jpg"/> -->
+          <h1>Gallery</h1>
+        </div>
+      </div>
+  </div>
+  <div style="width: 100vw;" class=" w3-white w3-center w3-container" id="mapPresence" >
+    <h1 class="w3-left-align" >Our Network of Supplies</h1>
+    <img src="https://t4.ftcdn.net/jpg/04/58/17/33/360_F_458173326_JbYIDlRrlzbym4URIQjF8yQzU6ahkXF8.jpg"/>
+  </div>
+    <!---------------------------------->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>    
+  </body>
+  <footer style="width: 100%;position:sticky;bottom: 0%;animation-delay: 5s;opacity: 0;animation:opacity-animation;" class="w3-black w3-center w3-animate-opacity w3-animate-bottom">      
+    <p>All rights reserved</p>
+    <p><a href="mailto:info@bubbersons.com">info@bubbersons.com</a></p>
+  </footer>
+</html>
