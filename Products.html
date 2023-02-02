@@ -25,16 +25,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <title>Bubbersons</title>
   </head>
-
-  <a  href="/index.html" ><img class="w3-margin" style="max-width: 5vw;"  src="./logo.png"/></a>
-
-
-  <div style="animation: none;opacity: 1;" class='Title'>
-    <h1 style="font-family: Delicious;">BUBBERSONS</h1>
-    <h6>Pharmaceutical Distributors</h6>
-  </div>
   <style>
-    @font-face { font-family: Delicious; src: url('/Fonts/prototype/Prototype.ttf '); } 
+    @font-face { font-family: Delicious; src: url('./Fonts/prototype/Prototype.ttf '); } 
   </style>
   <script>
     jQuery(document).ready(function($) {
@@ -70,10 +62,18 @@
 });
     
   </script>  
-  <body class="w3-center container"> 
-    <h1>Our line of Products</h1>       
+  <body>        
+    <div class="container w3-center">
+        <a href="./index.html" ><img class="w3-margin topLogo" src="./logo.png"/></a>
+
+        <span style="animation: none;opacity: 1;" class='Title w3-center'>
+          <h1 style="font-family: Delicious;">BUBBERSONS</h1>
+          <h6>Pharmaceutical Distributors</h6>
+        </span>
+
+        <h1 class="w3-left" style="font-family: monospace;"><i>Our line of Products</i></h1>       
     <!------------------Company Products--------------------->
-        <div id="content" class="w3-row-padding w3-cell-row container" style="columns: 3;">
+        <div id="content" class="w3-row-padding w3-cell-row" style="columns: 3;">
             <div>
             <div class=" w3-card w3-container w3-col w3-margin m3 l2 " >
                 <img class="w3-image" src="https://5.imimg.com/data5/SELLER/Default/2021/8/QX/SX/PO/135600207/pharma-product-photography-1000x1000.jpg"/>
@@ -162,7 +162,11 @@
                 <p>पेरासिटामोल या एसिटामिनोफेन व्यापक रूप से प्रयुक्त की जाने वाली काउंटर पर उपलब्ध एनाल्जेसिक और एंटीपायरेटिक दवा है। इसका प्रयोग आम तौर पर बुखार</p>
             </div>
         </div>
-        </div>
-        
+    </div>     
+</div>    
   </body>
+  <footer style="width: 100vw; position:sticky;bottom: 0; " class="w3-black w3-center w3-animate-bottom ">      
+    <p>® All rights reserved</p>
+    <p><a href="mailto:info@bubbersons.com">info@bubbersons.com</a></p>
+  </footer>
 </html>

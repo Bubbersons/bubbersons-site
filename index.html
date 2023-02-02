@@ -40,20 +40,20 @@
       
       function slideShow(i){
        i = i%4;
-       const arr = ["https://images.unsplash.com/photo-1577774438656-768f1e5d9ed6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyb3VzZWx8ZW58MHx8MHx8&w=1000&q=80",
-       "https://blog.equinix.com/wp-content/uploads/2017/07/pharma-medical.jpg",
-       "https://www.drugdiscoverytrends.com/wp-content/uploads/2022/03/Pharma50-2022_RDspenders_770x500_Vs1.jpg",
-       "http://www.biospace.com/getasset/07b7cf93-9513-432d-b6d8-cd2b08950623/"
+       const arr = ["https://cdn.archilovers.com/projects/57218667-c818-4d05-8387-84ab90d09c83.jpg",
+       "https://media.istockphoto.com/id/1256323645/photo/multi-ethnic-female-team-studying-dna-mutations-using-microscope-in-protective-workwear.jpg?s=612x612&w=0&k=20&c=2G6dg3skp9mM7xwBlpw0HCeCZb4oHXDWKlCRpqyDyGA=",
+       "https://media.gettyimages.com/id/1218539103/vector/healthcare-workers-set.jpg?s=612x612&w=gi&k=20&c=Z-5VtJaDSjzHKIqomf7KO-8HQE1MBAxWAHHo0Pmk3hY=",
+       "https://thumbs.dreamstime.com/b/scientist-analysis-to-tissues-writes-down-data-result-report-researcher-working-samples-tissue-culture-243926159.jpg"
      ];
      
-
+    console.log(arr[i]);
      setInterval(function(){document.getElementById('mySlides').src = arr[i];slideShow(i+1);},5000);  
       }
      </script>
 
     <!------------- Images SlideShow ------------->
-    <div id="mySlides" class="carousel w3-center" style="border-color: rgba(255, 248, 146, 0.869); border-style:groove; border-width: 1vw; margin-left: 10%;margin-right: 10%;" >        
-      <img style="width: 100%;max-height: 50vh;box-shadow: 2px -2px 20px black;"  src="https://images.unsplash.com/photo-1577774438656-768f1e5d9ed6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyb3VzZWx8ZW58MHx8MHx8&w=1000&q=80">      
+    <div id="mySlides" class="carousel w3-center" style="border-color: rgba(52, 52, 50, 0.869); border-style:groove; border-width: 1vw; margin-left: 10%;margin-right: 10%;" >        
+      <img style="width: 100%;max-height: 50vh;box-shadow: 2px -2px 20px black;"  src="https://media.istockphoto.com/id/1256323645/photo/multi-ethnic-female-team-studying-dna-mutations-using-microscope-in-protective-workwear.jpg?s=612x612&w=0&k=20&c=2G6dg3skp9mM7xwBlpw0HCeCZb4oHXDWKlCRpqyDyGA=">      
     </div>
 
     <!------------------Company Products--------------------->
@@ -90,7 +90,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>    
   </body>
-  <footer style="width: 100%;position:sticky;bottom: 0%;animation-delay: 5s;opacity: 0;animation:opacity-animation;" class="w3-black w3-center w3-animate-opacity w3-animate-bottom">      
+  <footer style="width: 100%;position:sticky;bottom: 0%;animation-delay: 5s;opacity: 0;animation:opacity-animation 4s forwards;" class="w3-black w3-center">      
     <p>All rights reserved</p>
     <p><a href="mailto:info@bubbersons.com">info@bubbersons.com</a></p>
   </footer>
